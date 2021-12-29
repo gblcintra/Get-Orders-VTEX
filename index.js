@@ -4,7 +4,6 @@ var account = "consulqa";
 //inserir a appkey e apptoken da loija
 var appkey = "x-vtex-api-appkey";
 var apptoken = "x-vtex-api-apptoken";
-var VtexIdclientAutCookie = "eyJhbGciOiJFUzI1NiIsImtpZCI6IkI5RkVDQTMzMUQ3MzgyM0Q2MjAyOENDMTNEMDcyODRFOTcxQUJDM0YiLCJ0eXAiOiJqd3QifQ.eyJzdWIiOiJnYWJyaWVsX2NpbnRyYV9qdXNzaUB3aGlybHBvb2wuY29tIiwiYWNjb3VudCI6ImNvbnN1bHFhIiwiYXVkaWVuY2UiOiJhZG1pbiIsInNlc3MiOiI0NTVmMzNiYi0wZDdmLTRjZDctOTFmMC04M2YyNzUzNWMxNjIiLCJleHAiOjE2NDA4Njg4NTYsInVzZXJJZCI6IjMwODVmMDg0LWZiOWQtNDNmMC04NTQxLTFiNzY0ZGNjMTAzNCIsImlhdCI6MTY0MDc4MjQ1NiwiaXNzIjoidG9rZW4tZW1pdHRlciIsImp0aSI6IjM0NjRiZTNhLTQ5OGMtNDNlNC04YzU0LWQ5Mzk3ZGNlZDBhOSJ9.VtiYe3izIQYXFc4VUn__AZDNPiCmJEg5dQBzjyHMfIHt4sytQIa-zZPS3kAp3voldx-btpf_FH6INdCF-xf1jA"
 
 //colocar as informações do usuario para cadastro ou update
 var array = [
@@ -51,7 +50,8 @@ async function getOrder(orderId, index) {
             crossDomain: !0,
             headers: {
                 Accept: "application/vnd.vtex.ds.v10+json",
-                "VtexIdclientAutCookie": `${VtexIdclientAutCookie}`,
+                "x-vtex-api-appkey": `${appkey}`,
+                "x-vtex-api-apptoken": `${apptoken}`,
                 "Content-Type": "application/json",
             }
         })
