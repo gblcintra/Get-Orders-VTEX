@@ -1,6 +1,6 @@
 
 //insira o account da loja
-var account = "consulqa";
+var account = "account-loja";
 //inserir a appkey e apptoken da loija
 var appkey = "x-vtex-api-appkey";
 var apptoken = "x-vtex-api-apptoken";
